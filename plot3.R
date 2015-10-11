@@ -8,7 +8,7 @@ subsetDates <- as.Date(c("01/02/2007", "02/02/2007"), dateFormat)
 df <- subset(df, Date %in% subsetDates)
 
 # Opening  png device
-png("plot3.png", width=400, height=400)
+png("plot3.png", width=800, height=800)
 
 # Plotting the data
 plot(df$DateTime, df$Sub_metering_1, type="l", col="black", xlab="", ylab="Energy sub metering")
